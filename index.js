@@ -43,13 +43,13 @@ function updatePlayers() {
             if (err) {
                 if (err.code == "ECONNREFUSED" || err.code == "ETIMEDOUT") {
                     if (channel) {
-                        channel.setName(`${args[0]}: Offline`);
+                        channel.setName(`🔴 | ${args[0]} | Offline`);
                         return;
                     }
                 }
             }
             if (channel) {
-                channel.setName(`${data.clients} / ${data.sv_maxclients}`);
+                channel.setName(`⚡ | ${args[0]} | ${data.clients} / ${data.sv_maxclients}`);
             }
             console.log(`${new Date().toISOString()}: ${data.clients} / ${data.sv_maxclients}`);
         });
