@@ -11,12 +11,14 @@ const http = __importStar(require("request"));
 const discord = __importStar(require("discord.js"));
 const bot = new discord.Client;
 const config = {
-    "token": "", //The token of your discord bot.
-    "guild": "", //The guild (id) with those \/ channels.
+    "token": "Nzg5MTg5NDc4NDE3MDM5NDYx.X9ub-g.9N3ZPRAhvZ7rHSLopWwqg04__0s", //The token of your discord bot.
+    "guild": "748025301581430877", //The guild (id) with those \/ channels.
     "devteam": "", // A admin / dev role that is allowed to force an update of the player count with 5m=update.
     "refreshtime": 30, // how often the player count is updated in seconds.
     "servers": [
-        "",
+        "SV1 45.43.2.109:10120 757785257159426209",
+        "SV2 45.43.2.109:20120 757788441814499439",
+        "SV3 45.43.2.109:30120 757788470113468537",
         //"name ip:port DiscordVoiceChannelID"
     ]
 };
